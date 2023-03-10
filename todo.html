@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+	body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.input-section {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.input-section input[type="text"] {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.task-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.task-item input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.task-item .task-text {
+	flex-grow: 1;
+}
+
+.task-item .task-text.completed {
+	text-decoration: line-through;
+}
+
+.task-item button {
+	margin-left: 10px;
+}
+
+</style>
+<body>
+	<div class="container">
+		<h1> Thanveer TODO Task</h1>
+		<div class="input-section">
+			<input type="text" id="task" placeholder="Enter task">
+			<button onclick="addTask()">Add</button>
+		</div>
+		<ul id="taskList"></ul>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
